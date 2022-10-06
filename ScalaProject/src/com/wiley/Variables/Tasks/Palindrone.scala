@@ -13,7 +13,6 @@ object Palindrone extends App{
     }
     else{
       println("Word is not a palindrome")
-      break
     }
   }
   println("Word is palindrome")
