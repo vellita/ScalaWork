@@ -1,5 +1,6 @@
 package com.wiley.SixthOct.Tasks
 
+
 object TemperatureTask extends App{
   def tempCheck(temps: List[Int]): Boolean={
     var below0:Boolean = false
