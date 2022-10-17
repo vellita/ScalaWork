@@ -14,18 +14,17 @@ class BankAccounts(sort_code:Int, account_number: Int) {
     println(f"Payment of £$amount into account $account_number has been sucessful\nNew balance is $balance")
   }
   def withdrawl(amount:Double): Unit ={
+
     if (balance - amount < 0){
       println("Sorry not enough money in account")
     }else
       balance = balance - amount
+      println(f"Current balance after this transaction is $balance")
+
   }
 }
 class Current(sort_code:Int, account_number:Int) extends BankAccounts(sort_code:Int, account_number: Int) {
 
-  override def withdrawl(amount:Double): Unit={
-    balance -= amount
-    println(f"Current balance after this transaction is $balance")
-  }
 }
 
 /* savign account inherits all features from the bank account class only difference is that interest is paid*/
@@ -43,7 +42,7 @@ class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccou
   // the credit balance is set to the credit limit
   balance = limit
   // interest rate to pay on overdue payment
-  var interest = 0.25
+  var interest = 1.25
   var overdue:Double = 0
 
 
