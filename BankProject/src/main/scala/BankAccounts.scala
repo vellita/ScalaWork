@@ -46,13 +46,9 @@ class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccou
   var overdue:Double = 0
 
 
-  def getLimit(): Unit ={
-    limit
-  }
+  def getLimit()= limit
 
-  def creditRemaining: Double = {
-    balance
-  }
+  def creditRemaining=balance
 
   def spend(amnt: Double): Unit ={
     balance -= amnt
@@ -64,6 +60,7 @@ class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccou
       overdue=payment * interest
       println("Overdue Payment: "+overdue)
     }
+    balance = limit
   }
 
   def overdueAmount: Double = {
@@ -87,5 +84,6 @@ object bankAccTest extends App {
 
   var savingsac = new Saving(111111, 22222222)
   savingsac.deposit(1223)
+
 
 }

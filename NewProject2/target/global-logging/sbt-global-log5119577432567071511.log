@@ -1,0 +1,143 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\velro\AppData\Local\Temp\idea2.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\velro\AppData\Local\Temp\idea2.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.7.2 (Oracle Corporation Java 17)
+[debug]       Load.loadUnit: plugins took 155.5416ms
+[debug]       Load.loadUnit: defsScala took 0.4666ms
+[debug] [Loading] Scanning directory C:\Users\velro\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\velro\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 40.9329 ms
+[debug]           Load.resolveProject(global-plugins) took 52.2207ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\velro\.sbt\1.0\plugins, plugins: List(<none>))) took 121.3452ms
+[debug] [Loading] Done in C:\Users\velro\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 156.7552ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3108ms
+[debug]     Load.loadUnit(file:/C:/Users/velro/.sbt/1.0/plugins/, ...) took 327.2426ms
+[debug]   Load.apply: load took 623.8106ms
+[debug]   Load.apply: resolveProjects took 12.7047ms
+[debug]   Load.apply: finalTransforms took 109.4866ms
+[debug]   Load.apply: config.delegates took 10.8383ms
+[debug]   Load.apply: Def.make(settings)... took 773.7268ms
+[debug]   Load.apply: structureIndex took 216.7063ms
+[debug]   Load.apply: mkStreams took 2.0019ms
+[info] loading global plugins from C:\Users\velro\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 3391.2003ms
+[debug]           Load.loadUnit: plugins took 31.2606ms
+[debug]           Load.loadUnit: defsScala took 0.024ms
+[debug] [Loading] Scanning directory C:\Users\velro\IdeaProjects\Scala\NewProject2\project
+[debug]             Load.loadUnit: mkEval took 6.7137ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\velro\IdeaProjects\Scala\NewProject2\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 4.0306 ms
+[info] loading settings for project newproject2-build from idea2.sbt ...
+[debug]               Load.resolveProject(newproject2-build) took 15.5651ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id newproject2-build, base: C:\Users\velro\IdeaProjects\Scala\NewProject2\project, plugins: List(<none>))) took 21.0037ms
+[debug] [Loading] Done in C:\Users\velro\IdeaProjects\Scala\NewProject2\project, returning: (newproject2-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 3026.1773ms
+[debug]           Load.loadUnit: cleanEvalClasses took 16.5886ms
+[debug]         Load.loadUnit(file:/C:/Users/velro/IdeaProjects/Scala/NewProject2/project/, ...) took 3075.5007ms
+[debug]       Load.apply: load took 3078.8197ms
+[debug]       Load.apply: resolveProjects took 0.237ms
+[debug]       Load.apply: finalTransforms took 24.8809ms
+[debug]       Load.apply: config.delegates took 0.8162ms
+[debug]       Load.apply: Def.make(settings)... took 182.0825ms
+[debug]       Load.apply: structureIndex took 67.7771ms
+[debug]       Load.apply: mkStreams took 0.0041ms
+[info] loading project definition from C:\Users\velro\IdeaProjects\Scala\NewProject2\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 5750.1719ms
+[debug]     Load.loadUnit: defsScala took 0.0029ms
+[debug] [Loading] Scanning directory C:\Users\velro\IdeaProjects\Scala\NewProject2
+[debug]       Load.loadUnit: mkEval took 0.4408ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 3.5684 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 40.5383ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\velro\IdeaProjects\Scala\NewProject2, plugins: List(<none>))) took 46.1843ms
+[debug] [Loading] Done in C:\Users\velro\IdeaProjects\Scala\NewProject2, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2204.9194ms
+[debug]     Load.loadUnit: cleanEvalClasses took 115.9059ms
+[debug]   Load.loadUnit(file:/C:/Users/velro/IdeaProjects/Scala/NewProject2/, ...) took 8072.0254ms
+[debug] Load.apply: load took 8074.1143ms
+[debug] Load.apply: resolveProjects took 0.1857ms
+[debug] Load.apply: finalTransforms took 42.6178ms
+[debug] Load.apply: config.delegates took 0.4198ms
+[debug] Load.apply: Def.make(settings)... took 96.2675ms
+[debug] Load.apply: structureIndex took 48.4551ms
+[debug] Load.apply: mkStreams took 0.0035ms
+[info] set current project to NewProject2 (in build file:/C:/Users/velro/IdeaProjects/Scala/NewProject2/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 63710 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 63710, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to NewProject2 (in build file:/C:/Users/velro/IdeaProjects/Scala/NewProject2/)
+[debug] > Exec(idea-shell, None, None)
