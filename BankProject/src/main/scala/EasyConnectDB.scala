@@ -16,3 +16,14 @@ class EasyConnectDB {
   }
 
 }
+object testt extends App{
+  var connection = new EasyConnectDB().connect()
+  implicit val session = AutoSession
+  var name = "smithjane"
+  val user = sql"select password from customers where username = ${name}".map(rs => rs.string("password")).first.apply()
+  user match {
+    case Some(i) => println(i == "word123")
+  }
+
+}
+

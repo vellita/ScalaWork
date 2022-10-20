@@ -1,5 +1,6 @@
 package com.wiley.NineteethOct
 
+/*
 import scalikejdbc._
 
 object Trycode extends App{
@@ -27,4 +28,4 @@ create table members (
 
 
 
-}
+}*/

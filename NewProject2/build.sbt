@@ -13,12 +13,12 @@ libraryDependencies +="org.scalatest" %% "scalatest-wordspec" % "3.2.14" % Test
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5"
 libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.30"
 
-libraryDependencies += "org.scalikejdbc" %% "scalikejdbc" % "4.0.0"
+//libraryDependencies += "org.scalikejdbc" %% "scalikejdbc" % "4.0.0"
 libraryDependencies += "com.h2database" % "h2" % "2.1.214" % Test
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.4.4" % Test
-/*
-val dep2="com.h2database" %% "h2" % "2.1.214" % Test
-val dep3="ch.qos.logback" %% "logback-classic" % "1.4.4" % Test
-libraryDependencies ++= Seq(dep2,dep3)
-*/
+
+val AkkaVersion = "2.6.20"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion
+libraryDependencies += "com.typesafe.akka" %% "akka-actor-testkit-typed" % AkkaVersion % Test
+libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.6.20"
 

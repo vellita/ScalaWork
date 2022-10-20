@@ -2,9 +2,9 @@ import org.scalatest.BeforeAndAfter
 import org.scalatest.funspec.AnyFunSpec
 
 class CreditAccountTest extends AnyFunSpec with BeforeAndAfter{
-  var creditacc = new Credit(111111,22222222, 4000)
+  var creditacc = Credit(111111,22222222, 4000)
   before{
-    creditacc = new Credit(111111,22222222, 4000)
+    creditacc =  Credit(111111,22222222, 4000)
   }
 
   describe("opening a credit account"){

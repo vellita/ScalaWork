@@ -23,29 +23,30 @@ class BankAccounts(sort_code:Int, account_number: Int) {
 
   }
 }
-class Current(sort_code:Int, account_number:Int) extends BankAccounts(sort_code:Int, account_number: Int) {
+case class Current(sort_code:Int, account_number:Int) extends BankAccounts(sort_code:Int, account_number: Int) {
 
 }
 
 /* savign account inherits all features from the bank account class only difference is that interest is paid*/
-class Saving(sort_code:Int, account_number: Int) extends BankAccounts(sort_code:Int, account_number: Int){
+case class Saving(sort_code:Int, account_number: Int) extends BankAccounts(sort_code:Int, account_number: Int){
   val interest= 0.15
 
   /*after  a term has ben completed the interest is paid to the account */
-  def termCompleted: Double = {
-    balance * interest
+  def termCompleted: Unit = {
+    var intrerestearned = balance * interest
+    balance += intrerestearned
   }
 }
 
 /*When the account is opened a credit limit is set */
-class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccounts(sort_code:Int, account_number: Int){
+case class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccounts(sort_code:Int, account_number: Int){
   // the credit balance is set to the credit limit
   balance = limit
   // interest rate to pay on overdue payment
-  var interest = 1.25
+  private val interest = 1.25
   var overdue:Double = 0
 
-
+  def getInterestRate() = (interest-1)*100 +"%"
   def getLimit()= limit
 
   def creditRemaining=balance
@@ -55,7 +56,7 @@ class Credit(sort_code:Int, account_number: Int, limit:Double) extends BankAccou
   }
 
   def termEnd: Unit ={
-    var payment = limit - balance
+    var payment = limit - balance + overdue
     if (payment > 0) {
       overdue=payment * interest
       println("Overdue Payment: "+overdue)

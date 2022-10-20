@@ -1,3 +1,5 @@
+import scalikejdbc._
+
 import scala.io.{Source, StdIn}
 import scala.util.Random
 
@@ -11,9 +13,9 @@ object Bank {
     var account_number = ac.between(10000000, 99999999) // 8 digit acccount number
 
     ACtype match {
-      case 1 => new Current(sort_code, account_number)
-      case 2 => new Saving(sort_code, account_number)
-      case 3 => new Credit(sort_code, account_number, limit)
+      case 1 => Current(sort_code, account_number)
+      case 2 => Saving(sort_code, account_number)
+      case 3 => Credit(sort_code, account_number, limit)
     }
   }
 
@@ -63,7 +65,10 @@ object Bank {
 
     selection match {
       case 1 => Source.fromFile("src/main/scala/InterestRates").getLines().foreach(println(_))
-      case 2 =>
+      case 2 =>{
+        println("Please provide feedback: ")
+        var feedback = StdIn.readLine()
+      }
     }
   }
 
@@ -75,10 +80,16 @@ object Bank {
     print("Password: ")
     val pw = StdIn.readLine()
 
-    false
+    var connection = new EasyConnectDB().connect()
+    implicit val session = AutoSession
+    val user = sql"select password from customers where username = ${username}".map(rs => rs.string("password")).first.apply()
+    user match {
+      case Some(i) => if (i == pw) true else false
+      case _ => false
+    }
   }
 
-  def signup(): Unit ={
+  def signup(): Boolean = {
     println("First name:")
     val fname = StdIn.readLine()
     print("Surname: ")
@@ -90,8 +101,8 @@ object Bank {
 
     var newuser = new Customers(1, fname, lname, doB)
 
-    println("Your username is: "+newuser.getusername)
-
+    println("Your username is: " + newuser.getusername)
+    true
   }
 
   def main(args: Array[String]): Unit = {
@@ -117,7 +128,7 @@ object Bank {
       var loggedin = false
       option match {
         case 1 => loggedin = userLogin()
-        case 2 =>
+        case 2 => loggedin = signup()
       }
 
       if (loggedin) {
