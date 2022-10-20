@@ -18,13 +18,17 @@ Customers can check if they are eligible for a loan and check interest rates
 Customers are also able to provide feedback
 
 #### Current Account  
-deposit, withdraw, check balance
+Deposit, Withdraw, Check Balance
+
 #### Credit account:
 Set credit limit when you set up account
-spend, check credit remaining, check the interest rate, check overdue amount, pay overdue amount
+
+Spend, Check credit remaining, Check the interest rate, Check overdue amount, Pay overdue amount
+
 At the end of a term(i.e a month) interest is charged onto the credit spent from account
 #### Savings account
-deposit, withdraw
+Deposit, Withdraw
+
 At the end of a term(i.e a month) interest is paid onto the money in account
 
 
