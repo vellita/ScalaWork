@@ -8,6 +8,9 @@ Require a mysql java dependency
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.30"
 
+---
+
+---
 # [Tuples](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/EighteethOct/Tuples)
 
 In scala tuples can contain elements of different datatypes
@@ -18,6 +21,9 @@ Tuple can have a maximum of 22 items
 
 To access an element tuples use _i eg tuple._1
 
+---
+
+---
 # [Sets](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/EleventhOct/Collectionss)
 
 Sets are collection of unique elements with the same type. This means that there cannot be duplicate elements
@@ -30,6 +36,9 @@ LinkedHashSet retrieves the order that its were inserted
 
 Set interface implemented by the HashSet class using a hash table to store elements hashcodes hence the order changes
 
+---
+
+---
 
 # [Exceptions](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/EleventhOct/ExceptionThrows)
 ![](Exception-in-java1.png)
@@ -48,6 +57,9 @@ Exception handling can be done through a try/catch block and pattern match the t
 *Throw* keyword is used to explicitly throw exceptions from methods.
 It has a return type of Nothing hence is easily customisable.
 
+---
+
+---
 
 # [Testing](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/test/scala)
 
@@ -80,12 +92,32 @@ but all the test case will work in the exact same way.
 
 [GivenWhenThen](https://github.com/vellita/ScalaWork/blob/master/NewProject2/src/test/scala/Featurespec.scala)
 
+---
 
-# Higher Order
+--------
+
+# [Higher Order](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/HigherOrder)
 
 Function that takes a function as an argument, or returns a function
 
-we created from programs to implement higher order functions
+We created from programs to implement higher order functions. 
+Higher order functions can be used anonymously, as class's method can be called without assigning it to a variable 
+Another use of higher order functions was multiline expression whereby the position of the operator matters.
+Nested function whereby a function is called inside another.
+We used it to create composite functions whereby they are stacked together.
+
+---
+
+---
+# [Threads](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/NineteethOct/Threads) 
+
+Multithreading allows multiple processes to run at the same times to allow simultaneous performance of operations.
+
+threads can be created in two distinct ways: by extending Thread or implementing the Runnable interface 
+
+
+
+
 
 
 

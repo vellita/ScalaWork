@@ -1,12 +1,24 @@
-# [JDBC Connector](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/EighteethOct/JdbConnectorwithDB)
+# Database - mySQL
+
+## [JDBC Connector](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/EighteethOct/JdbConnectorwithDB)
 
 Use of java.sql to connect to my local mySQL database.
 This class allows us to read from the database tables by using DriveManager
 and Connection
+To write to the sql database we need to use [PreparedStatement](https://github.com/vellita/ScalaWork/blob/master/NewProject2/src/main/scala/com/wiley/NineteethOct/InsertSql.scala) 
 
 Require a mysql java dependency
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.30"
+
+## [scalikejdbc](https://github.com/vellita/ScalaWork/blob/master/NewProject2/src/main/scala/com/wiley/NineteethOct/trySQLinsett.scala)
+
+Using a different dependency we are able to easily connect to the database using a session
+
+To execute sql queries we need to write the statement and put .execute.apply() when creating a table.
+Put .update.apply() when inserting a record into the table and other such as 
+.list.apply() can be used to retrieve items from query in a list format.
+apply() allows us to execute sql queries in a simpler manner compared to the JDBC Connector
 
 ---
 
@@ -109,16 +121,120 @@ We used it to create composite functions whereby they are stacked together.
 ---
 
 ---
-# Threads 
+# [Threads](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/NineteethOct/Threads) 
 
 Multithreading allows multiple processes to run at the same times to allow simultaneous performance of operations.
+Each thread tuns concurrently and independent of each other, hence the will not run in sequential order
+
+Threads can be created in two distinct ways: by extending Thread or implementing the Runnable interface.
+Using the runnable interface you need to overwrite the run() method to the behaviour you require.
+Once we instantiate a thread by passing the new class through the constructor, we need to call the start() method.
+
+Extending the Thread class works in a similar way, the run() method needs to be overriden; 
+start() method need to be called to start the execution of a thread. Start() invokes the run() method on the Thread object.
+
+Other useful method of threads are, join() which waits for the thread to finish its execution; 
+sleep() which wait a period of time given in milliseconds; 
+setPriority() the defualt priority of threads are 5, the max is 10 and the min is 0.
+
+---
+
+---
+
+# [Operators](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/Operators)
+
+Operators are mathematical components that allow the compiler to preform arithmetic and logical operations.
+
+Mathematics: + - * / %
+
+Relational: == != > < >= <=
+
+Logical:  && || !
+
+---
+
+---
+# [Functions](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/ScalaFunctions)
+
+Functions in a group of statements that perform a task and they can have parameters.
+
+In this we worked on understanding the syntax of functions, creating a recursive function and setiting defualt values
+
+---
+
+---
 
 
+# [Maps](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventeenthOct/Collection/Maps)
+
+A Map is an Iterable consisting of pairs of keys and values. key -> value
+
+We can add to a map using map += (key -> value) 
+
+Maps have three methods: keys,values,isEmpty .We can iterate through a map using foreach. 
 
 
+---
+
+---
+# [Queue](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventeenthOct/Collection/Queue)
+
+FIFO, First in first out data structure.
+The two most basic operations of Queue are:
+Enqueue - Adding an element at the end of the queue;
+Dequeue – Deleting an element from the beginning of the queue.
+
++=: add a single element in the end of the queue.
+++=: used to Insert more than one the element in the end of the queue.
+clear: Remove all elements from the queue.
+front: Returns the first element in the queue.
+isEmpty: Check if the queue is empty or not.
+
+Priority queues are queue with each element given a priority, when dequeue it is determined on its priority.
 
 
+---
 
+---
+# [Enumeration](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventeenthOct/Enumerations)
+
+Enumerations are a group of named constants. Typically used to define our own data types
+To create an enum you need to extend Enumeration, this class provides a type called Value to represent each of the enumeration values
+
+Enums are used to make clearer and more readable code, particularly when meaningful names are used. The benefits of using enumerations include: Reduces errors caused by transposing or mistyping numbers
+
+---
+
+---
+# [Stream](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventeenthOct/Streams)
+
+Stream implements lazy lists where elements are only evaluated when they are needed.
+
+When creating a stream you need to write #:: after each item you are adding to the stream 
+and Stream.empty at the end to show the end of a stream.
+Another way Streams are created is using Stream.cons : We can also create a Stream by using Stream.cons. 
+A package import scala.collection.immutable.Stream.cons is used for creating stream.
+
+when printing stream it will only show you the first element unless specified.
+
+---
+
+---
+# [Abstract Classes](https://github.com/vellita/ScalaWork/blob/master/NewProject2/src/main/scala/com/wiley/SeventhOct/AbstractClass)
+
+Abstract classes can not be instansated but have all other functionalites of a class usually used when you not was an instance of the main class but of child classes
+abstract classes allow you to have empty variables and method.
+
+---
+
+---
+
+# [Override](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventhOct/MethodOverriding)
+
+Alongside inheritance, subclasses are about to use the methods of superclass.
+If you want to change the funtionality in the subclasses these need to be overridden 
+
+Overriding fields are also possible if they are declared as a var
 
 
 

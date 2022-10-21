@@ -1,4 +1,4 @@
-package com.wiley.SeventeenthOct.Collection
+package com.wiley.SeventeenthOct.Collection.Queue
 
 import scala.collection.immutable.Queue
 

@@ -1,10 +1,10 @@
-package com.wiley.SeventeenthOct.Collection
+package com.wiley.SeventeenthOct.Collection.Queue
 
 import scala.collection.immutable.Queue
 
-object Queues extends App{
-  var que = Queue(1,24,56,7,3,223,10,5,2,9)
-  var que2:Queue[Int]=Queue(98,4,5,7,8,2,21)
+object Queues extends App {
+  var que = Queue(1, 24, 56, 7, 3, 223, 10, 5, 2, 9)
+  var que2: Queue[Int] = Queue(98, 4, 5, 7, 8, 2, 21)
   println(que)
   println(que2)
 
@@ -13,7 +13,7 @@ object Queues extends App{
 
   println("****Enqueuing")
   var queEnqueue = que.enqueue(3)
-  queEnqueue.foreach((element:Int)=>println(element))
+  queEnqueue.foreach((element: Int) => println(element))
 
   println("****Dequeuing")
   var quedequeue = que.dequeue
@@ -24,11 +24,10 @@ object Queues extends App{
   println(que.sorted)
 
   println(que.min, que.max)
-/*  println("list as queues?")
+  /*  println("list as queues?")
   var listque = List(1,24,56,7,3,223,5,2,9)*/
 
   println(que.size)
-
 
 
 }

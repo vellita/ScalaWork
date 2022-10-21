@@ -1,5 +1,5 @@
+import com.wiley.SeventeenthOct.Collection.Queue.TestQueue
 import org.scalatest.funsuite.AnyFunSuite
-import com.wiley.SeventeenthOct.Collection.{TestQueue}
 
 import scala.collection.immutable.Queue
 
