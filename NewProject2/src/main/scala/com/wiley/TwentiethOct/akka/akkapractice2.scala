@@ -1,5 +1,6 @@
 package com.wiley.TwentiethOct.akka
 
+/*
 import akka.actor.typed.ActorSystem
 import akka.actor.typed.javadsl.Behaviors
 import akka.stream.scaladsl.{Flow, Sink, Source}
@@ -27,4 +28,4 @@ object akkapractice2 {
     source.via(aysncFlow).to(sink).run()
   }
 
-}
+}*/

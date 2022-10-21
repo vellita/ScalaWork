@@ -1,10 +1,9 @@
 import scalikejdbc._
 
 import java.text.SimpleDateFormat
-import java.util.{Calendar, Date}
-import java.time.LocalDate
-class Customers(id:Int, firstN:String, lastN:String, doB: String) {
-  val cusid:Int = id
+
+class Customers(firstN:String, lastN:String, doB: String) {
+  var cusid:Int =  (-1)
   var first_name = firstN
   var surname = lastN
   val format = new SimpleDateFormat("yyyy-MM-dd")
@@ -22,13 +21,20 @@ class Customers(id:Int, firstN:String, lastN:String, doB: String) {
     db.connect()
     implicit val session = AutoSession
     // insert initial data
-    sql"insert into customers (id, first_name, surname, DoB, username, password) values (${id}, ${first_name}, ${surname}, ${doB}, ${username}, ${password})".update.apply()
+    sql"insert into customers (first_name, surname, DoB, username, password) values (${first_name}, ${surname}, ${doB}, ${username}, ${password})".update.apply()
+
+    val id = sql"select id from customers where username = ${username}".map(rs => rs.string("id")).list.apply()
+    cusid = id.head.toInt
   }
+
+  def getId = cusid
+
+
 
 }
 object testCustomers extends App{
   //val format = new SimpleDateFormat("yyyy-MM-dd")
-  var newuser = new Customers(3, "Laura", "JenKins", "2000-02-04")
+  var newuser = new Customers("Laura", "JenKins", "2000-02-04")
   newuser.setPassword("password")
   newuser.addtoDB()
 

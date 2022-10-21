@@ -3,6 +3,8 @@ package com.wiley.SixthOct.Patterns
 //*syntax* case class CaseClass(parameters)
 // used for pattern matching etc
 
+//traits are used to share interface and fields between classes
+// similar to java interfaces
 trait SuperTrait //the parent
 
 case class CaseClass1(a:Int,b:Int) extends SuperTrait

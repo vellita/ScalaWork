@@ -1,5 +1,7 @@
 package EleventhOct.Collectionss
 
+// sets is a type of collection
+// this objects if just testing out the features of a set
 object MoreSets extends App{
   var set1 = Set("BMW")
   var set2 = Set("Honda", "Audi", "Toyota")

@@ -20,10 +20,11 @@ object testt extends App{
   var connection = new EasyConnectDB().connect()
   implicit val session = AutoSession
   var name = "smithjane"
-  val user = sql"select password from customers where username = ${name}".map(rs => rs.string("password")).first.apply()
-  user match {
+  val user = sql"select id from customers where username = ${name}".map(rs => rs.string("id")).list.apply()
+  println(user)
+  /*user match {
     case Some(i) => println(i == "word123")
-  }
+  }*/
 
 }
 
