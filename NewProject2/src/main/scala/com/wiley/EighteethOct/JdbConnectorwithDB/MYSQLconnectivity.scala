@@ -12,7 +12,9 @@ object MYSQLconnectivity extends App{
   try {
     Class.forName(driver)
     connection = DriverManager.getConnection(url, username, password)
-    val insertSql =
+
+    // my own work below after doing some research, which he showed and explain to us the next day
+/*    val insertSql =
       """
         |insert into movies.movies (title, genre, director, release_year)
         |values (?,?,?,?)
@@ -26,7 +28,7 @@ object MYSQLconnectivity extends App{
     preparedStmt.setInt(4, 2012)
     preparedStmt.execute
 
-    preparedStmt.close()
+    preparedStmt.close()*/
 
     val statement = connection.createStatement()
     val resultSet = statement.executeQuery("SELECT title, release_year FROM movies.movies")

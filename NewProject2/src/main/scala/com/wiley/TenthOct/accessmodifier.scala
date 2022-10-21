@@ -22,3 +22,4 @@ class MoreTemp extends Temp{
 
 object accessmodifier {
   var temperatures = new Temp()
+}
