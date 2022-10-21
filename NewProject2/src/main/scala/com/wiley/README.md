@@ -228,7 +228,20 @@ abstract classes allow you to have empty variables and method.
 ---
 
 ---
+# [Inheritance](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventhOct/Inheritance) 
 
+Inheritance is when a class is extended.
+There are five types of inheritance: 
+- Single - When a class inherits from a superclass
+- Multilevel - A class extends another which extends another
+- Multiple - One class inherits from multiple base classes
+- Heirarchical - More than one class inherits from one base class
+- Hybird - Combination of at least two kinds of inheritance
+
+
+---
+
+---
 # [Override](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SeventhOct/MethodOverriding)
 
 Alongside inheritance, subclasses are about to use the methods of superclass.
@@ -236,10 +249,30 @@ If you want to change the funtionality in the subclasses these need to be overri
 
 Overriding fields are also possible if they are declared as a var
 
+---
+
+---
+# [Constructor](https://github.com/vellita/ScalaWork/tree/master/NewProject2/src/main/scala/com/wiley/SixthOct/Constructors)
+
+Constructors are used to pass through values into the class when new instances are created.
+
+Types of class constructor
+- Default - no parameters, can be written wihh or without parenthesis
+- Primary - only one constructer, can have one or more parameters
+- Secondary/Auxiliary - using the keyword this(...) to pass in more parameters and having default values
 
 
+---
 
+---
 
+# [Overloading]()
+
+Method Overloading is the common way of implementing polymorphism. 
+It is the ability to redefine a function in more than one form. A user can implement function overloading by defining two or more functions in a class sharing the same name
+
+Overloaded methods are differentiated based on the number and type of the parameters passed as an argument to the methods.
+You can chaneg the functionality based on the number or type of parameters 
 
 
 
