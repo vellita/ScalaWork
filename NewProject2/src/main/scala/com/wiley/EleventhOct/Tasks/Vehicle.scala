@@ -1,4 +1,4 @@
-package EleventhOct.Tasks
+package com.wiley.EleventhOct.Tasks
 
 abstract class Vehicle {
   var make:String

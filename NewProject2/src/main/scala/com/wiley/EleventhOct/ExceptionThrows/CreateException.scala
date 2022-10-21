@@ -1,4 +1,4 @@
-package EleventhOct.ExceptionThrows
+package com.wiley.EleventhOct.ExceptionThrows
 
 class InvalidAgeException(s:String) extends Exception(s){
   //to override the exception message you can have the previous line as:

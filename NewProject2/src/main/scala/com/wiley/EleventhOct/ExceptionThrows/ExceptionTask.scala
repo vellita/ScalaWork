@@ -1,4 +1,4 @@
-package EleventhOct.ExceptionThrows
+package com.wiley.EleventhOct.ExceptionThrows
 
 class NotEvenException(s:String) extends Exception(s){}
 

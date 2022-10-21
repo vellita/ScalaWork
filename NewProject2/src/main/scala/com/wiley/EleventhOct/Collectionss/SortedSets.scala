@@ -1,4 +1,4 @@
-package EleventhOct.Collectionss
+package com.wiley.EleventhOct.Collectionss
 
 import scala.collection.immutable.SortedSet
 object SortedSets extends App{

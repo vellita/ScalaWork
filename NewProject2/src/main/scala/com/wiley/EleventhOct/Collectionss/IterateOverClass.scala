@@ -1,5 +1,4 @@
-package EleventhOct.Collectionss
-
+package com.wiley.EleventhOct.Collectionss
 
 //instead of usign a for loop you can iterate through lists with foreach
 object IterateOverClass extends App {
